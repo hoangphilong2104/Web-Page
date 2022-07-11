@@ -11,12 +11,12 @@
 
 <!-- author: Long -->
 	
-	<bean id="logAdvice" class="com.theplayer.kits.foodboys.advice.LogAdvice"></bean>
-	<bean id="servletContext" class="com.theplayer.kits.foodboys.ServletContextParam"></bean>
+	<bean id="logAdvice" class="com.theplayer.dragon.webpage.footballs.advice.LogAdvice"></bean>
+	<bean id="servletContext" class="com.theplayer.dragon.webpage.footballs.ServletContextParam"></bean>
 
 <aop:config>
 <aop:pointcut id="allPointcut"
-expression="execution(* com.theplayer.kits..*.*(..))" />
+expression="execution(* com.theplayer.dragon..*.*(..))" />
 
 <aop:aspect ref="logAdvice">
 	<aop:before method="printLog" 
